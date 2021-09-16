@@ -5,7 +5,7 @@ services:
         build:
             args:
                 user: raphael
-                uid: 1000
+                uid: 1001
             context: ./
             dockerfile: Dockerfile
         image: laravel-app
@@ -50,7 +50,7 @@ services:
         build:
             args:
                 user: raphael
-                uid: 1000
+                uid: 1001
             context: ./
             dockerfile: Dockerfile
         restart: unless-stopped
