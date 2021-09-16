@@ -3,9 +3,6 @@ services:
     # image project
     project_x:
         build:
-            args:
-                user: raphael
-                uid: 1000
             context: ./
             dockerfile: Dockerfile
         image: laravel-app
@@ -48,9 +45,6 @@ services:
     # queue
     queue:
         build:
-            args:
-                user: raphael
-                uid: 1000
             context: ./
             dockerfile: Dockerfile
         restart: unless-stopped
